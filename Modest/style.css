@@ -1,0 +1,232 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+a {
+  text-decoration: none;
+}
+.header {
+  height: 112px;
+  background-color: #1d2025;
+}
+.header_logo {
+  background-color: aqua;
+  display: block;
+  height: 100;
+}
+.top-nav {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  color: aliceblue;
+  padding-top: 20px;
+  justify-items: center;
+}
+.nav-item {
+  margin: auto;
+}
+.banner {
+  background-image: url(images/banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  text-align: left;
+}
+.wrapper {
+  padding-top: 250px;
+  padding-left: 200px;
+}
+.title {
+  color: aliceblue;
+  margin: auto;
+  padding-bottom: 20px;
+}
+.title h1 {
+  padding-bottom: 20px;
+}
+.banner-button {
+  display: flex;
+  gap: 20px;
+}
+.custom-button-1 {
+  background-color: #22dac8; /* Màu nền */
+  border: none; /* Không viền */
+  color: white; /* Màu chữ */
+  padding: 10px 20px; /* Kích thước nút */
+  text-align: center; /* Căn giữa chữ */
+  text-decoration: none; /* Không gạch chân cho liên kết */
+  display: inline-block; /* Hiển thị như khối nội dòng */
+  font-size: 16px; /* Kích thước chữ */
+  cursor: pointer; /* Con trỏ chuột thành bàn tay khi rê chuột qua nút */
+  border-radius: 8px; /* Bo tròn góc */
+  transition: background-color 0.3s ease; /* Hiệu ứng hover */
+}
+.custom-button-2 {
+  background: transparent; /* Không có màu nền */
+  border: 1px solid white; /* Viền màu xanh lá */
+  color: white; /* Màu chữ xanh lá */
+  padding: 10px 20px; /* Kích thước padding */
+  font-size: 16px; /* Kích thước chữ */
+  cursor: pointer; /* Con trỏ chuột thành bàn tay khi rê chuột qua nút */
+  border-radius: 8px; /* Bo tròn góc viền */
+  transition: all 0.3s ease; /* Hiệu ứng mượt mà khi hover */
+}
+.nav-link {
+  transition: border-radius 0.3s;
+}
+.nav-link:hover {
+  border-radius: 50%;
+  border-color: aliceblue;
+}
+.about {
+  background-color: white;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.content {
+  padding-top: 40px;
+}
+.content p {
+  color: rgb(153, 164, 155);
+}
+.about h1 {
+  padding-top: 80px;
+}
+.people-wrapper {
+  background-color: white;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.people-wrapper img {
+  padding-top: 50px;
+  width: 80%; /* Thu nhỏ hình ảnh xuống 50% chiều rộng ban đầu */
+  height: auto; /* Giữ nguyên tỉ lệ khung hình */
+  margin: 0 auto; /* Căn giữa hình ảnh */
+}
+
+.view {
+  background-color: #3b454e;
+  padding-left: 80px;
+  padding-right: 80px;
+  color: white;
+}
+.view h1 {
+  padding-bottom: 30px;
+  padding-top: 50px;
+}
+.view img {
+  width: 90%;
+  padding-bottom: 40px;
+}
+.view-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.view button {
+  background: transparent; /* Không có màu nền */
+  border: 1px solid white; /* Viền màu xanh lá */
+  color: white; /* Màu chữ xanh lá */
+  padding: 10px 20px; /* Kích thước padding */
+  font-size: 16px; /* Kích thước chữ */
+  cursor: pointer; /* Con trỏ chuột thành bàn tay khi rê chuột qua nút */
+  border-radius: 8px; /* Bo tròn góc viền */
+  transition: all 0.3s ease; /* Hiệu ứng mượt mà khi hover */
+}
+
+.form-wrapper {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  border: 1px solid #beaeae;
+}
+
+.contact-form-container {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  border: 1px solid #161111;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: #f9f9f9;
+}
+
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-form .form-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.contact-form .form-group {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.contact-form .form-group:last-child {
+  margin-right: 0;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.contact-form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #36c4ce;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+footer {
+  background-color: #3b454e;
+  height: 10vh;
+  justify-content: center;
+}
+footer p {
+  color: white;
+  padding-top: 20px;
+  padding-left: 80px;
+}
+footer img {
+  size: 50%;
+  height: 60px;
+  padding-left: 200px;
+}
+.work {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.contact {
+  padding-left: 80px;
+  padding-right: 80px;
+}
